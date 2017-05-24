@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace SimpleCalculator
 {
-    class Program
+    class SimpleCalc
     {
         static void Main()
         {

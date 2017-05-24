@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MatchingBrackets
 {
-    class Program
+    class TheBrackets
     {
         static void Main(string[] args)
         {

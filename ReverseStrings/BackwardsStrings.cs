@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ReverseStrings
 {
-    class Program
+    class BackwardsStrings
     {
         static void Main()
         {

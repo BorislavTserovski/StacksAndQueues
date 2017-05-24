@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DecimalToBinaryConverter
 {
-    class Program
+    class DecimalBynary
     {
         static void Main()
         {

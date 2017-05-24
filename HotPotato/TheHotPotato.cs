@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace HotPotato
 {
-    class Program
+    class TheHotPotato
     {
         static void Main()
         {
