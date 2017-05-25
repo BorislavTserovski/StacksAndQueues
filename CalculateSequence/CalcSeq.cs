@@ -9,12 +9,35 @@ namespace CalculateSequence
     {
         static void Main()
         {
-            int n = int.Parse(Console.ReadLine());
-            Queue<int>numbersQueue = new Queue<int>();
-            
-            for (int i = 0; i < 50; i++)
+            long n = long.Parse(Console.ReadLine());
+            Queue<long>numbersQueue = new Queue<long>();
+            numbersQueue.Enqueue(n);
+            Console.Write(n);
+            for (int i = 0; i < 49; i++)
             {
-                
+                long numToPrint = 0;
+
+                if (i % 3==0 && i!=0)
+                {
+                    numbersQueue.Dequeue();
+                }
+                if (i%3==0)
+                {
+
+                    numToPrint = numbersQueue.Peek() + 1;
+                    numbersQueue.Enqueue(numToPrint);
+                }
+                else if (i%3==1)
+                {
+                    numToPrint = numbersQueue.Peek() * 2 + 1;
+                    numbersQueue.Enqueue(numToPrint);
+                }
+                else if (i%3==2)
+                {
+                    numToPrint = numbersQueue.Peek() + 2;
+                    numbersQueue.Enqueue(numToPrint);
+                }
+                Console.Write(" " + numToPrint);
             }
         }
     }
